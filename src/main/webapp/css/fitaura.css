@@ -1,0 +1,103 @@
+/* ==========================================================================
+   FitAura - Track. Improve. Thrive.
+   Core Web Stylesheet - Phase 1 Foundation
+   ========================================================================== */
+
+:root {
+    --fa-primary: #10b981;
+    --fa-primary-dark: #059669;
+    --fa-primary-light: #d1fae5;
+    --fa-accent: #06b6d4;
+    --fa-slate-900: #0f172a;
+    --fa-slate-800: #1e293b;
+    --fa-slate-700: #334155;
+    --fa-slate-100: #f1f5f9;
+    --fa-slate-50: #f8fafc;
+    --fa-border: #e2e8f0;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    color: var(--fa-slate-800);
+    background-color: var(--fa-slate-50);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Brand styling */
+.brand-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 700;
+    font-size: 1.25rem;
+    color: var(--fa-slate-900);
+    text-decoration: none;
+}
+
+.brand-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 9999px;
+    background: linear-gradient(135deg, var(--fa-primary), var(--fa-accent));
+    display: inline-block;
+}
+
+/* Hero section */
+.hero-gradient {
+    background: linear-gradient(135deg, rgba(16, 185, 129, 0.08) 0%, rgba(6, 182, 212, 0.08) 100%);
+    border-bottom: 1px solid var(--fa-border);
+}
+
+.feature-card {
+    background: #ffffff;
+    border: 1px solid var(--fa-border);
+    border-radius: 12px;
+    padding: 1.5rem;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    height: 100%;
+}
+
+.feature-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px -5px rgba(15, 23, 42, 0.08);
+}
+
+.icon-wrapper {
+    width: 48px;
+    height: 48px;
+    border-radius: 10px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--fa-primary-light);
+    color: var(--fa-primary-dark);
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+}
+
+.privacy-toggle-box {
+    background: #ffffff;
+    border: 2px dashed #cbd5e1;
+    border-radius: 12px;
+    padding: 1.25rem;
+}
+
+/* Architecture layer badges */
+.arch-tag {
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    padding: 0.25rem 0.6rem;
+    border-radius: 9999px;
+    display: inline-block;
+}
+
+/* Responsive utilities */
+@media (max-width: 768px) {
+    .feature-card {
+        padding: 1.25rem;
+    }
+}

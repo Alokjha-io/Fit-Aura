@@ -1,0 +1,6 @@
+{
+  "name": "FitAura – Track. Improve. Thrive.",
+  "description": "A responsive privacy-first fitness tracking web application built with Java, Jakarta Servlets, JSP, JDBC, and Bootstrap.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
